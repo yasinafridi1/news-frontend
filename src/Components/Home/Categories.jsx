@@ -33,6 +33,11 @@ const Categories = () => {
   }
 
   useEffect(() => {
+    if (location.pathname === "/arts" || location.pathname === "/") {
+      setDefault(true);
+    } else {
+      setDefault(false);
+    }
     fetchCategory("arts");
   }, []);
 
