@@ -5,12 +5,13 @@ const Card = ({ data }) => {
     <a
       href={data.newUrl}
       target="_blank"
+      rel="noreferrer"
       className="min-w-[250px] max-w-[350px] bg-gray-300 rounded-md dark:bg-slate-300  relative overflow-hidden card"
     >
       <img
         className="h-full w-full"
         src={data.imageUrl}
-        alt="News cover picture"
+        alt="News cover background"
       />
       <div className="textData text-slate-200 cursor-pointer">
         <h4 className="font-bold text-lg text-slate-300">{data.tittle}</h4>

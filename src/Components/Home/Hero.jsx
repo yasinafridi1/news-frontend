@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,9 +15,9 @@ const Hero = () => {
           </p>
 
           <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-            <a
+            <Link
               className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-2 px-4 dark:focus:ring-offset-gray-800"
-              href="#"
+              to="/arts"
             >
               Get started
               <svg
@@ -29,11 +30,11 @@ const Hero = () => {
                 <path
                   d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

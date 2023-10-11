@@ -3,18 +3,17 @@ import { Link } from "react-router-dom";
 
 const NotFound = ({ isHome }) => {
   return (
-    <html className="h-full dark:bg-gray-800">
-      <body className="flex h-full">
+    <div className="h-full dark:bg-gray-800">
+      <div className="flex h-full">
         <div className="max-w-[50rem] flex flex-col mx-auto w-full h-full">
           <header className="mb-auto flex justify-center z-50 w-full py-4">
             <nav className="px-4 sm:px-6 lg:px-8" aria-label="Global">
-              <a
+              <Link
+                to="/"
                 className="flex-none text-xl font-semibold sm:text-3xl dark:text-white"
-                href="#"
-                aria-label="Brand"
               >
                 Top News
-              </a>
+              </Link>
             </nav>
           </header>
 
@@ -55,8 +54,8 @@ const NotFound = ({ isHome }) => {
             </footer>
           )}
         </div>
-      </body>
-    </html>
+      </div>
+    </div>
   );
 };
 
